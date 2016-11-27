@@ -1,6 +1,6 @@
 <?php
-include 'config.php';//要调用的函数
-include 'cloud_music.php';
+include "config.php";//聊天接口,获取access_token,记录用户输入函数
+include "cloud_music.php";//获取音乐函数
 define("TOKEN", "cgddgc");   //定义token
 $wechatObj = new wechat_php();
 if (isset($_GET['echostr']))   //token验证

@@ -1,5 +1,4 @@
 <?php
-class cloud_music{
 	function curl_get($url)
 	{
 		$refer = "http://music.163.com/";
@@ -151,7 +150,7 @@ class cloud_music{
 		return $music_id;
 	}
 	function get_musicUrl($word,$limit,$art){
-		$musicUrl="null";
+		$musicUrl="";
 		$music_id=get_musicid($word,$limit,$art);
 		$music_info=get_music_info($music_id);
 		$music_info=json_decode($music_info,true);
@@ -169,7 +168,6 @@ class cloud_music{
 		//echo $src1;
 		return $artist;
 	}
-}
 
 //$reg='\"songs\":\[\{\"id\":(.*?)\"name\"';
 //preg_match($reg,$output,$matches);

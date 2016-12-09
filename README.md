@@ -1,2 +1,2 @@
 # wechat
-微信后台
+wechat_php
